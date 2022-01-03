@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/b8fe73c5ad42d10d63f7b.jpg)
+✪ I'm Seto Kaiba anime-theme management bot [✨](http://telegra.ph/file/2bdba3d7345fe3f090b1b.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Siesta Robot", callback_data="siesta_"),
+        InlineKeyboardButton(text="About Seto Kaiba Robot", callback_data="siesta_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Siesta To Your Group ➗", url="t.me/Siestaxbot?startgroup=new"),
+            text="➗ Add Seto Kaiba To Your Group ➗", url="t.me/SetoKaibaRobot?startgroup=new"),
     ],
 ]
 
@@ -110,10 +110,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/b8fe73c5ad42d10d63f7b.jpg"
+EMI_IMG = "https://telegra.ph/file/385b68de22720e3b373c5.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @saint_foire \
+ You can support the project by contacting @harshahero \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -374,12 +374,12 @@ def siesta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="siesta_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="siesta_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="SetoKaiba_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="SetoKaiba_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="siesta_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="siesta_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="sctbotssupport"),
+                    InlineKeyboardButton(text="Credits", callback_data="SetoKaiba"),
                  ],
                  [
                     InlineKeyboardButton(text="Source Code", url="https://github.com/shiinobu/SiestaRobot"),
@@ -433,16 +433,16 @@ def siesta_about_callback(update, context):
                 [[InlineKeyboardButton(text="Go Back", callback_data="siesta_")]]
             ),
         )
-    elif query.data == "siesta_support":
+    elif query.data == "sctbotssupport":
         query.message.edit_text(
-            text="*๏ Siesta support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Siesta.",
+            text="*๏ SetoKaibasupport chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Seto Kaiba.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/machinaxupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/machinaxupdate"),
+                    InlineKeyboardButton(text="Support", url="t.me/sctbotssupport"),
+                    InlineKeyboardButton(text="Updates", url="t.me/sctbots"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="siesta_"),
@@ -456,17 +456,17 @@ def siesta_about_callback(update, context):
     elif query.data == "siesta_credit":
         query.message.edit_text(
             text=f"๏ Credis for Siesta\n"
-            "\nHere Developers Making And Give Inspiration For Made The Siesta Robot",
+            "\nHere Developers Making And Give Inspiration For Made The Seto Kaiba",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
-                    InlineKeyboardButton(text="Sena-Ex", url="https://github.com/kennedy-ex"),
+                    InlineKeyboardButton(text="Harsha", url="https://harshahero"),
+                    InlineKeyboardButton(text="kishore", url="https://AASFCYBERKING"),
                  ],
                  [
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="AASFCYBERKING", url="https://github.com/AASFCYBERKING"),
+                    InlineKeyboardButton(text="devilharsha", url="https://github.com/devilharsha"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="siesta_"),
