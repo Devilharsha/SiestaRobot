@@ -97,8 +97,7 @@ buttons = [
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="setoKaiba support!​​", url="t.me/sctbotsSupport"),
-        ),
+            text="setoKaiba support!​​", url="t.me/sctbotssupport"),
     ],
     [
         InlineKeyboardButton(
