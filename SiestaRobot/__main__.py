@@ -92,12 +92,12 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Seto Kaiba Robot", callback_data="siesta_"),
+        InlineKeyboardButton(text=" Seto Kaiba updates", url="t.me/sctbots"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="setoKaiba support!​​", url="t.me/sctbotsSupport"),
         ),
     ],
     [
@@ -382,7 +382,7 @@ def siesta_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="SetoKaiba"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/shiinobu/SiestaRobot"),
+                    InlineKeyboardButton(text="Source Code", url="t.me/sctbotsSupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="siesta_back"),
