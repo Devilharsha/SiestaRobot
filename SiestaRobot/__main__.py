@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=" Seto Kaiba updates", url="t.me/sctbots"),
+        InlineKeyboardButton(text="summon me💗", url="t.me/SetoKaibaRobot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -101,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Seto Kaiba To Your Group ➗", url="t.me/SetoKaibaRobot?startgroup=new"),
+            text="SetoKaiba updates", url="t.me/sctbots"),
     ],
 ]
 
@@ -407,7 +407,7 @@ def siesta_about_callback(update, context):
     elif query.data == "siesta_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Siesta Robot now ready to manage your group."
+            "\nCongragulations, SetoKaiba now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -785,7 +785,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Siesta Robot Started!**
+                f"""**Seto Kaiba Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
@@ -793,7 +793,7 @@ def main():
             )
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+                "Seto Kaiba isnt able to send message to support_chat, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
