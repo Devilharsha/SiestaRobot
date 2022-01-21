@@ -1,9 +1,9 @@
 from telegram.ext import run_async
 
-from KURUMIBOT import dispatcher
-from KURUMIBOT.modules.disable import DisableAbleCommandHandler
-from KURUMIBOT.modules.helper_funcs.alternate import send_message
-from KURUMIBOT.modules.helper_funcs.chat_status import user_admin
+from SiestaRobot import dispatcher
+from SiestaRobot.modules.disable import DisableAbleCommandHandler
+from SiestaRobot.modules.helper_funcs.alternate import send_message
+from SiestaRobot.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
