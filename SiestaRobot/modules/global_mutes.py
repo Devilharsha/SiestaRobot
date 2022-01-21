@@ -8,12 +8,12 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import KURUMIBOT.modules.sql.global_mutes_sql as sql
-from KURUMIBOT import dispatcher, OWNER_ID, DEV_USERS,DRAGONS,DEMONS, TIGERS,STRICT_GMUTE
-from KURUMIBOT.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from KURUMIBOT.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from KURUMIBOT.modules.helper_funcs.filters import CustomFilters
-from KURUMIBOT.modules.sql.users_sql import get_all_chats
+import SiestaRobot.modules.sql.global_mutes_sql as sql
+from SiestaRobot import dispatcher, OWNER_ID, DEV_USERS,DRAGONS,DEMONS, TIGERS,STRICT_GMUTE
+from SiestaRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from SiestaRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from SiestaRobot.modules.helper_funcs.filters import CustomFilters
+from SiestaRobot.modules.sql.users_sql import get_all_chats
 
 GMUTE_ENFORCE_GROUP = 6
 
