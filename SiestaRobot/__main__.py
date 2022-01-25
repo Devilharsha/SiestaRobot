@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm Seto Kaiba anime-theme management bot [✨](http://telegra.ph/file/2bdba3d7345fe3f090b1b.jpg)
+✪ I'm Ninja Naruto anime-theme management bot [✨](http://telegra.ph/file/8a3233459345eb6676e13.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,16 +92,16 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="summon me💗", url="t.me/SetoKaibaRobot?startgroup=new"),
+        InlineKeyboardButton(text="summon me💗", url="t.me/Ninja_naruto_Robot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="setoKaiba support!​​", url="t.me/sctbotssupport"),
+            text="setoKaiba support!​​", url="t.me/hungamadis"),
     ],
     [
         InlineKeyboardButton(
-            text="SetoKaiba updates", url="t.me/sctbots"),
+            text="SetoKaiba updates", url="t.me/cartoonnetworkworl"),
     ],
 ]
 
@@ -109,7 +109,7 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/385b68de22720e3b373c5.jpg"
+EMI_IMG = "http://telegra.ph/file/4f5ba37d96a552dd6d814.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @harshahero \
@@ -359,7 +359,7 @@ def siesta_about_callback(update, context):
     query = update.callback_query
     if query.data == "siesta_":
         query.message.edit_text(
-            text="๏ I'm *Seto Kaiba*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *ninja Naruto*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -407,7 +407,7 @@ def siesta_about_callback(update, context):
     elif query.data == "siesta_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, SetoKaiba now ready to manage your group."
+            "\nCongragulations, ninja Naruto now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -785,7 +785,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Seto Kaiba Started!**
+                f"""**ninja Naruto Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
