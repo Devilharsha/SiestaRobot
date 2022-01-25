@@ -97,11 +97,11 @@ buttons = [
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="setoKaiba support!​​", url="t.me/hungamadis"),
+            text="Naruto support!​​", url="t.me/hungamadis"),
     ],
     [
         InlineKeyboardButton(
-            text="SetoKaiba updates", url="t.me/cartoonnetworkworl"),
+            text="naruto updates", url="t.me/cartoonnetworkworl"),
     ],
 ]
 
@@ -793,7 +793,7 @@ def main():
             )
         except Unauthorized:
             LOGGER.warning(
-                "Seto Kaiba isnt able to send message to support_chat, go and check!"
+                "Naruto isnt able to send message to support_chat, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
